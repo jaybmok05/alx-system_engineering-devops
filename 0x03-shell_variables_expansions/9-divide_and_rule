@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e $(((POWER)/(DIVID)E))
+echo -e $(($POWER/$DIVIDE))
