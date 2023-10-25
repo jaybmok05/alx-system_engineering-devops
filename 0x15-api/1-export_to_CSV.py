@@ -12,7 +12,7 @@ if __name__ == '__main__':
         API_URL = 'https://jsonplaceholder.typicode.com'
         user_res = requests.get('{}/users/{}'.format(API_URL, id)).json()
         todos_res = requests.get('{}/todos'.format(API_URL)).json()
-        user_name = user_res.get('name')
+        user_name = user_res.get('username')
         todos = [todo for todo in todos_res if todo.get('userId') == id]
 
         # Create a CSV file for the user
